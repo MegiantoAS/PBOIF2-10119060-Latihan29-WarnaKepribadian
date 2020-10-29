@@ -22,6 +22,12 @@ public class PBOIF210119060Latihan29WarnaKepribadian {
     public static final String PURPLE = "\u001b[35m";
     public static final String CYAN = "\u001b[36m";
     public static final String BLACK = "\u001b[30m";
+    public static final String WHITE = "\u001b[37m";
+    private static String redBackground;
+    private static String greenBackground;
+    private static String yellowBackground;
+    private static String blueBackground;
+    private static String purpleBackground;
 
     public static void kepribadian(String warna, String nama){
         System.out.println("");
@@ -95,12 +101,12 @@ public class PBOIF210119060Latihan29WarnaKepribadian {
         String warna,nama;
         
         System.out.println(RED+"YUK"+GREEN+" CEK"+YELLOW+" KEPRIBADIANMU"+CYAN+" DARI"+PURPLE+" WARNA"+BLUE+" FAVORITMU");
-        System.out.println(RED+"MERAH");
-        System.out.println(GREEN+"HIJAU");
-        System.out.println(YELLOW+"KUNING");
-        System.out.println(BLUE+"BIRU");
-        System.out.println(PURPLE+"UNGU");
-        System.out.println(BLACK+"");
+        System.out.println(redBackground ="\u001B[41m"+WHITE+"         MERAH        ");
+        System.out.println(greenBackground ="\u001B[42m"+WHITE+"         HIJAU        ");
+        System.out.println(yellowBackground ="\u001B[43m"+WHITE+"        KUNING        ");
+        System.out.println(blueBackground ="\u001B[44m"+WHITE+"         BIRU         ");
+        System.out.println(purpleBackground ="\u001B[45m"+WHITE+"         UNGU         ");
+        System.out.println(BLACK+""); 
         System.out.print("PILIH WARNA FAVORITMU : ");
         warna = input.next();
         System.out.print("NAMA KAMU : ");
